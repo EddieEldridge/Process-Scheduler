@@ -23,9 +23,10 @@ class Runner
 	{	
 		// Variables
 		int i;
+		int numProcesses = 0;
 		
 		// Array to store processes
-		Process[] myclass = new Process[num_processes];
+		Process[] myclass = new Process[numProcesses];
 
 		
 		// Import Scanner
@@ -42,13 +43,13 @@ class Runner
 		// User input
 		// Prompt user for number of processes
 		System.out.println("How many processes would you like to schedule?");
-		
+		numProcesses = scan.nextInt();
+
 		
 		// For loop depending on number of processes
-		for(i=0; i<numGuess; i++)
+		for(i=0; i<myclass.length; i++)
 		{
-			System.out.printf("Process Time for Guess %d", numGuess);
-			numGuess = scan.nextInt();
+			System.out.printf("Process Time for Guess %d", numProcesses);
 		}
 		// Prompt user for processing time of each process
 	
